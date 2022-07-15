@@ -9,7 +9,7 @@ let test_results = []
 function loadImage(){
     return new Promise((resolve, reject) => {
         let image = new Image()
-        image.src = "./test.gif" + parseInt(Math.random() * 10000)
+        image.src = "./test.gif?" + parseInt(Math.random() * 10000)
         let startTime = Date.now()
 
         image.onload = function(){
